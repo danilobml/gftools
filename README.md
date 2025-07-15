@@ -22,11 +22,15 @@ go get github.com/danilobml/gftools
 
 ## Usage Examples:
 
-### Filter:
+### Example slice of int:
 
 ```go
 nums := []int{1, 2, 3, 4, 5}
+```
 
+### Filter:
+
+```go
 // Using a custom function:
 evens := gftools.Filter(nums, func(n int) bool {
 	return n % 2 == 0
