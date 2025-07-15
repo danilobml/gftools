@@ -2,8 +2,6 @@
 
 **gftools** is a lightweight Go package providing generic, functional-style utilities like `Filter`, `Map`, `Reduce`, `Find`, and predicate factories such as `GreaterThan`, `HasValue`, and `MatchRegex`.
 
-It’s designed for simplicity, readability, and safe use with Go generics.
-
 ---
 
 ## Features
@@ -19,7 +17,7 @@ It’s designed for simplicity, readability, and safe use with Go generics.
 Go 1.18 or later is required.
 
 ```sh
-go get github.com/danilobml/gftools@v0.1.0
+go get github.com/danilobml/gftools
 ```
 
 ## Usage Examples:
