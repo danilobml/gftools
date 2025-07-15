@@ -25,24 +25,32 @@ func GreaterOrEqual(n int) func(int) bool {
 	}
 }
 
-// LessThan returns a predicate (paramFunc) that checks if a value is less than n.
+// LessThan returns a predicate (paramFunc) that checks if a int value is less than n.
 func LessThan(n int) func(int) bool {
 	return func(x int) bool {
 		return x < n
 	}
 }
 
-// LessOrEqual returns a predicate (paramFunc) that checks if a value is less than or equal to n.
+// LessOrEqual returns a predicate (paramFunc) that checks if a int value is less than or equal to n.
 func LessOrEqual(n int) func(int) bool {
 	return func(x int) bool {
 		return x <= n
 	}
 }
 
-// Between returns a predicate (paramFunc) that checks if a value is between min and max (inclusive).
+// Between returns a predicate (paramFunc) that checks if a int value is between min and max 
+// (inclusive).
 func Between(min, max int) func(int) bool {
 	return func(x int) bool {
 		return x >= min && x <= max
+	}
+}
+
+// IsEven returns a predicate (paramFunc) that checks if a int value is even.
+func IsEven() func(int) bool {
+	return func(x int) bool {
+		return x % 2 == 0
 	}
 }
 
